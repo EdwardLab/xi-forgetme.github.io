@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <meta http-equiv="cache-control" content="max-age=60">
+        <meta http-equiv="keywords" content="">
+        <meta http-equiv="description" content="">
+        <meta name="viewport"
+	content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta charset="utf-8">
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(248,163,107), rgba(252,116,94));
+            }
+            .mainbox {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 10px;
+                align-items: top;
+                width: 100%;
+                height: 80px; 
+            }
+            .mainbox > button {
+                width: 1px;
+                height: 5px;
+            }
+            .mainbox > h3 {
+                text-shadow: black 0em 0em 0.15em;
+                color: aliceblue;
+                font-size: 21px;
+            }
+            .mainbox > p {
+                font-size: small;
+                color: rgba(52,120,246);
+            }
+            table {
+                text-align: center;
+                margin: 0px auto;
+                background-color: rgba(255,255,255);
+                border-color: rgba(238,238,238);
+                table-layout:fixed;
+                width: 95%;
+                height: 20%;
+                font-size: 13px;
+                font-family: 等线;
+            }
+            .top-button {
+                position: absolute;
+                top: 2%;
+                left: 5%;
+                width: 75px;
+                height: 25px;
+                background: rgba(91,180,239);
+                color: white;
+                border: 0px;
+                border-radius: 4px;
+            }
+            .float-button {
+                position: fixed;
+                right: 20px;
+                bottom: 150px;
+                width: 40px;
+                height: 40px;
+                border: 0px;
+                border-radius: 50%;
+                background-image: url('./button.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 42px;
+            }
+        </style>
+    </head>
+    <body onload="utils()">
+        <button class="top-button">数据统计</button>
+        <div class="mainbox">
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我的学习记录</h3>
+            <p><br><br>&nbsp&nbsp&nbsp&nbsp<span style="color: black;">年度</span> <year id="year"></year></p>
+        </div>
+        <div>
+            <table>
+                <tr height="30">
+                    <td style="background: rgba(255,236,236);font-size:13px;width: 20%;"><b>期数</b></td>
+                    <td style="background: rgba(255,236,236);font-size:13px;"><b>学习团组织</b></td>
+                    <td style="background: rgba(255,236,236);font-size:13px;"><b>登录信息</b></td>
+                </tr>
+                <tr height="50">
+                    <td style="width: 20%;">第<term id="term0"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz0'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name0"></name> <phone id="phone0"></phone><br><date id="date0"></date></td>
+                </tr>
+                <tr height="50">
+                    <td style="width: 20%;">第<term id="term1"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz1'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name1"></name> <phone id="phone1"></phone><br><date id="date1"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term2"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz2'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name2"></name> <phone id="phone2"></phone><br><date id="date2"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term3"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz3'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name3"></name> <phone id="phone3"></phone><br><date id="date3"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term4"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz4'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name4"></name> <phone id="phone4"></phone><br><date id="date4"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term5"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz5'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name5"></name> <phone id="phone5"></phone><br><date id="date5"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term6"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz6'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name6"></name> <phone id="phone6"></phone><br><date id="date6"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term7"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz7'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name7"></name> <phone id="phone7"></phone><br><date id="date7"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term8"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz8'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name8"></name> <phone id="phone8"></phone><br><date id="date8"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term9"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz9'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name9"></name> <phone id="phone9"></phone><br><date id="date9"></date></td>
+                </tr><tr height="50">
+                    <td style="width: 20%;">第<term id="term10"></term>期</td>
+                    <td style="padding:0px 17px;"><u><cls id='clazz10'></cls>团支部</u></td>
+                    <td style="padding:0px 17px;"><name id="name10"></name> <phone id="phone10"></phone><br><date id="date10"></date></td>
+                </tr>
+            </table>
+            <button class="float-button"></button>
+            <script>
+                function getRealDay(date) {
+                    var day = date.getDate();
+                    if (day < 10) {
+                        return '0' + day + '日'
+                    } else {
+                        return day + '日'
+                    }
+                }
+                function getRandom(x,y) {
+                    return parseInt(Math.random() * (y - x + 1) + x);
+                }
+                function utils() {
+                    alert("请依次输入您的信息");
+                    var info = new Array();
+                    var infoList = new Array("年份","班级","姓名","手机","期数（最新的）");
+                    var nameList = new Array('year','clazz','name','phone','term','date');
+                    for (var i = 0; i < infoList.length; i++) {
+                        info[i] = prompt(infoList[i]);
+                    }
+                    for (var i = 0; i < nameList.length; i++) {
+                        try {
+                            if (nameList[i] == 'clazz' || nameList[i] == 'name' || nameList[i] == 'phone') {
+                                for (var j = 0; j < 11; j++) {
+                                    var tagName = nameList[i] + j;
+                                    document.getElementById(tagName).innerText = info[i];
+                                }
+                                continue;
+                            }
+                            if (nameList[i] == 'term') {
+                                for (var j = 0; j < 11; j++) {
+                                    var tagName = nameList[i] + j;
+                                    document.getElementById(tagName).innerText = info[i] - j;
+                                }
+                                continue;
+                            }
+                            if (nameList[i] == 'date') {
+                                var now = new Date();
+                                var time;
+                                for (var j = 0; j < 11; j++) {
+                                    var randTime = getRandom(6,7)*j*getRandom(1,24)*getRandom(1,60)*getRandom(1,60);
+                                    time = new Date(now.getTime() - 7*j*24*60*60*1000 - randTime);
+                                    forTime = time.getFullYear() + "年" + (time.getMonth() + 1) + "月" + getRealDay(time) + getRandom(10, 23) + ":" + getRandom(10, 59);
+                                    var tagName = nameList[i] + j;
+                                    document.getElementById(tagName).innerText = forTime;
+                                }
+                            }
+                            document.getElementById(nameList[i]).innerText = info[i];
+                        } catch (error) {
+                            continue;
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
